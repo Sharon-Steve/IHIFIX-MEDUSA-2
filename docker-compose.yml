@@ -30,7 +30,7 @@ services:
       - medusa_network
 
   medusa:                        # Layer 1: the application
-    build: .
+    image: ghcr.io/sharon-steve/ihifix-medusa-2:latest
     container_name: medusa_backend
     restart: unless-stopped
     depends_on:
